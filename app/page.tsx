@@ -91,7 +91,7 @@ export default function Home() {
             align: "start",
             loop: true,
           }}
-          className="w-full"
+          className="w-full relative"
         >
           <CarouselContent>
             {newProducts.map((product) => (
@@ -115,8 +115,10 @@ export default function Home() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="relative z-10">
+            <CarouselPrevious className="absolute -left-12" />
+            <CarouselNext className="absolute -right-12" />
+          </div>
         </Carousel>
       </section>
 
@@ -128,7 +130,7 @@ export default function Home() {
             align: "start",
             loop: true,
           }}
-          className="w-full"
+          className="w-full relative"
         >
           <CarouselContent>
             {recommendedProducts.map((product) => (
@@ -152,8 +154,10 @@ export default function Home() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="relative z-10">
+            <CarouselPrevious className="absolute -left-12" />
+            <CarouselNext className="absolute -right-12" />
+          </div>
         </Carousel>
       </section>
 

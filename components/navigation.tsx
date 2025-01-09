@@ -27,11 +27,13 @@ export function Navigation() {
   return (
     <header className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <Flower2 className="h-6 w-6" />
-          <Shirt className="h-6 w-6" />
-          <span className="font-bold">Bloom & Stitch</span>
-        </Link>
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center space-x-2">
+            <Flower2 className="h-6 w-6" />
+            <Shirt className="h-6 w-6" />
+            <span className="font-bold">Bloom & Stitch</span>
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:flex">
@@ -56,7 +58,7 @@ export function Navigation() {
         {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="shrink-0">
               <Menu className="h-6 w-6" />
               <span className="sr-only">メニューを開く</span>
             </Button>
