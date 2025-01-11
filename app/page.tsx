@@ -84,77 +84,89 @@ export default function Home() {
       </section>
 
       {/* New Products */}
-      <section className="container">
+      <section className="container px-10 md:px-20">
         <h2 className="text-3xl font-bold mb-8">新着商品</h2>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full"
-        >
-          <CarouselContent>
-            {newProducts.map((product) => (
-              <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
-                <Card>
-                  <CardContent className="p-0">
-                    <div className="relative h-64">
-                      <Image
-                        src={product.image}
-                        alt={product.title}
-                        fill
-                        className="object-cover rounded-t-lg"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-semibold">{product.title}</h3>
-                      <p className="text-muted-foreground">{product.price}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <div className="relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {newProducts.map((product) => (
+                <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
+                  <Card>
+                    <CardContent className="p-0">
+                      <div className="relative h-64">
+                        <Image
+                          src={product.image}
+                          alt={product.title}
+                          fill
+                          className="object-cover rounded-t-lg"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold">{product.title}</h3>
+                        <p className="text-muted-foreground">{product.price}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="absolute left-2 top-1/2 -translate-y-1/2">
+              <CarouselPrevious />
+            </div>
+            <div className="absolute right-2 top-1/2 -translate-y-1/2">
+              <CarouselNext />
+            </div>
+          </Carousel>
+        </div>
       </section>
 
       {/* Recommended Products */}
-      <section className="container">
+      <section className="container px-10 md:px-20">
         <h2 className="text-3xl font-bold mb-8">おすすめ商品</h2>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full"
-        >
-          <CarouselContent>
-            {recommendedProducts.map((product) => (
-              <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
-                <Card>
-                  <CardContent className="p-0">
-                    <div className="relative h-64">
-                      <Image
-                        src={product.image}
-                        alt={product.title}
-                        fill
-                        className="object-cover rounded-t-lg"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-semibold">{product.title}</h3>
-                      <p className="text-muted-foreground">{product.price}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <div className="relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {recommendedProducts.map((product) => (
+                <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
+                  <Card>
+                    <CardContent className="p-0">
+                      <div className="relative h-64">
+                        <Image
+                          src={product.image}
+                          alt={product.title}
+                          fill
+                          className="object-cover rounded-t-lg"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold">{product.title}</h3>
+                        <p className="text-muted-foreground">{product.price}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="absolute left-2 top-1/2 -translate-y-1/2">
+              <CarouselPrevious />
+            </div>
+            <div className="absolute right-2 top-1/2 -translate-y-1/2">
+              <CarouselNext />
+            </div>
+          </Carousel>
+        </div>
       </section>
 
       {/* Workshop Section */}
