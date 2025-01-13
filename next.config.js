@@ -3,13 +3,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { 
+  images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
     ],
+    domains: ['thumb.photo-ac.com', 'images.unsplash.com'],
   },
 };
 

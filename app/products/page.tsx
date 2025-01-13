@@ -12,7 +12,7 @@ const products = [
   {
     title: 'アーティフィシャルフラワー',
     description: '本物そっくりの高品質な造花で、永遠の美しさを。',
-    image: 'https://images.unsplash.com/photo-1589244159943-460088ed5c1e',
+    image: 'https://thumb.photo-ac.com/6f/6fbdec664d4e952f6e25edaf821dd754_t.jpeg',
     href: '/products/artificial-flowers'
   },
   {
