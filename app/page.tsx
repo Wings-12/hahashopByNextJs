@@ -59,9 +59,9 @@ const recommendedProducts = [
 
 export default function Home() {
   return (
-    <div className="space-y-20 pb-20">
+    <div className="flex flex-col items-center gap-20 pb-20">
       {/* Hero Section */}
-      <section className="relative h-[600px]">
+      <section className="relative h-[600px] w-full">
         <Image
           src="https://images.unsplash.com/photo-1558882224-dda166733046"
           alt="Hero image"
