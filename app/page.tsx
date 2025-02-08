@@ -186,7 +186,7 @@ export default function Home() {
                 フラワーアレンジメントから洋服作りまで、
                 様々なクリエイティブな体験をご用意しています。
               </p>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-black">
+              <Button asChild size="lg" variant="outline" className="text-white border-white bg-black hover:bg-white hover:text-black">
                 <Link href="/workshop">詳しく見る</Link>
               </Button>
             </div>
