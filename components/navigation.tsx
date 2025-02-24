@@ -21,7 +21,14 @@ export function Navigation() {
         <Link href="/" className="flex items-center space-x-2">
           <Flower2 className="h-6 w-6" />
           <Shirt className="h-6 w-6" />
-          <span className="font-bold">Bloom & Stitch</span>
+          <span className="font-bold flex flex-col items-center sm:flex-row sm:justify-center">
+            <span className="sm:hidden">Bloom</span>
+            <span className="sm:hidden text-sm sm:text-base leading-none sm:mx-1"> {/* Adjust font size and add horizontal margin */}
+              &amp;
+            </span>
+            <span className="sm:hidden">Stitch</span>
+            <span className="hidden sm:inline">Bloom &amp; Stitch</span> {/* Show on larger screens */}
+          </span>
         </Link>
         <NavigationMenu className='md:ml-[-150px]'>
           <NavigationMenuList className='w-full'>
@@ -29,8 +36,8 @@ export function Navigation() {
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-2 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50',
-                    pathname === '/' && 'bg-accent/50'
+                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-gray-800 px-2 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
+                    pathname === '/' && 'bg-gray-900'
                   )}
                 >
                   ホーム
@@ -41,8 +48,8 @@ export function Navigation() {
               <Link href="/products" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-2 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50',
-                    pathname === '/products' && 'bg-accent/50'
+                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-gray-800 px-2 py-2 ml-1 mr-1 text-[12px] font-semibold text-white transition-colors hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
+                    pathname === '/' && 'bg-gray-900'
                   )}
                 >
                   商品・サービス
@@ -53,8 +60,8 @@ export function Navigation() {
               <Link href="/workshop" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-2 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50',
-                    pathname === '/workshop' && 'bg-accent/50'
+                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-gray-800 px-2 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
+                    pathname === '/' && 'bg-gray-900'
                   )}
                 >
                   ワークショップ
