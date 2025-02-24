@@ -11,15 +11,15 @@ import Image from 'next/image';
 const faqs = [
   {
     question: '予約のキャンセルは可能ですか？',
-    answer: '開催日の3日前までであれば、全額返金にて承ります。それ以降は返金できかねますのでご了承ください。'
+    answer: 'いつでもキャンセル可能です。キャンセル料も必要ありません。'
   },
   {
     question: '道具は持参する必要がありますか？',
-    answer: '基本的な道具は全て当店でご用意いたします。エプロンのみご持参ください。'
+    answer: '基本的な道具は全て当店でご用意いたします。必要であればエプロンのみご持参ください。'
   },
   {
     question: '初心者でも参加できますか？',
-    answer: '経験は問いません。丁寧にご指導させていただきますので、安心してご参加ください。'
+    answer: '基本的に初心者対象で開催してます。安心してご参加ください。'
   },
   {
     question: '作品は持ち帰れますか？',
@@ -65,14 +65,12 @@ export default function WorkshopPage() {
       {/* よくある質問セクション */}
       <section>
         <h2 className="text-3xl font-bold mb-6">よくある質問</h2>
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        {faqs.map((faq, index) => (
+          <div key={index} className="mb-4">
+            <h3 className="text-lg font-semibold">{faq.question}</h3>
+            <p className="text-base">{faq.answer}</p>
+          </div>
+        ))}
       </section>
     </div>
   );
