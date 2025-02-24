@@ -23,7 +23,7 @@ export function Navigation() {
           <Shirt className="h-6 w-6" />
           <span className="font-bold">Bloom & Stitch</span>
         </Link>
-        <NavigationMenu className='md:ml-[-150px]'>
+        <NavigationMenu className='md:ml-[-200px]'>
           <NavigationMenuList className='w-full'>
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
