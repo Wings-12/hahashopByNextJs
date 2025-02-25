@@ -36,8 +36,8 @@ export function Navigation() {
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-gray-800 px-2 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
-                    pathname === '/' && 'bg-gray-900'
+                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] px-2 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
+                    pathname === '/' && 'bg-[#abd6b7]'
                   )}
                 >
                   ホーム
@@ -48,8 +48,8 @@ export function Navigation() {
               <Link href="/products" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-gray-800 px-2 py-2 ml-1 mr-1 text-[12px] font-semibold text-white transition-colors hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
-                    pathname === '/' && 'bg-gray-900'
+                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] px-1 py-2 ml-1 mr-1 text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
+                    pathname === '/' && 'bg-[#abd6b7]'
                   )}
                 >
                   商品・サービス
@@ -60,8 +60,8 @@ export function Navigation() {
               <Link href="/workshop" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-gray-800 px-2 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
-                    pathname === '/' && 'bg-gray-900'
+                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] px-1 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
+                    pathname === '/' && 'bg-[#abd6b7]'
                   )}
                 >
                   ワークショップ
