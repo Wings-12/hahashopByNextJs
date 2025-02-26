@@ -12,6 +12,12 @@ import {
 } from '@/components/ui/navigation-menu';
 import { Flower2, Shirt } from 'lucide-react';
 
+const baseNavigationMenuLink = 'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50'
+
+const additionalHomeClassName="px-2 py-2"
+const additionalProductsAndServicesClassName="px-1 py-2 ml-1 mr-1"
+const additionalWorkshopClassName="px-1 py-2"
+
 export function Navigation() {
   const pathname = usePathname();
 
@@ -36,8 +42,8 @@ export function Navigation() {
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] px-2 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
-                    pathname === '/' && 'bg-[#abd6b7]'
+                    baseNavigationMenuLink,
+                    additionalHomeClassName,
                   )}
                 >
                   ホーム
@@ -47,10 +53,8 @@ export function Navigation() {
             <NavigationMenuItem>
               <Link href="/products" legacyBehavior passHref>
                 <NavigationMenuLink
-                  className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] px-1 py-2 ml-1 mr-1 text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
-                    pathname === '/' && 'bg-[#abd6b7]'
-                  )}
+                  className={cn(baseNavigationMenuLink,
+                    additionalProductsAndServicesClassName)}
                 >
                   商品・サービス
                 </NavigationMenuLink>
@@ -60,8 +64,8 @@ export function Navigation() {
               <Link href="/workshop" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
-                    'group inline-flex h-10 w-max items-center justify-center rounded-full bg-[#abd6b7] px-1 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-[#92c19f] focus:bg-[#92c19f] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:pointer-events-none disabled:opacity-50',
-                    pathname === '/' && 'bg-[#abd6b7]'
+                    baseNavigationMenuLink,
+                    additionalWorkshopClassName
                   )}
                 >
                   ワークショップ
