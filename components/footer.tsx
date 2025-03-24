@@ -42,7 +42,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold">フォローする</h3>
             <div className="mt-2 flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-foreground">
@@ -55,7 +55,7 @@ export function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mt-10 border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
