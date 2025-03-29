@@ -8,10 +8,10 @@ export function Footer() {
         {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4"> // リンクなどの他のdiv要素も使う時にコメント解除 */}
         <div className="flex justify-center items-center">
           <div>
-            <h3 className="text-lg font-semibold ">花もよう</h3>
-            <p className="mt-2 text-sm text-muted-foreground relative right-1">
+            <p className="mt-2 text-sm text-muted-foreground relative right-1.5">
               花と雑貨の店
             </p>
+            <h3 className="text-lg font-semibold ">花もよう</h3>
           </div>
           {/* <div>
             <h3 className="text-lg font-semibold">リンク</h3>
