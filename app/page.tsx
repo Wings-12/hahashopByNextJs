@@ -71,7 +71,7 @@ export default function Home() {
         />
         <div className="container relative h-full flex items-center">
           <div className="max-w-2xl text-white">
-            <h1 className="text-5xl font-bold mb-6">花と服の調和を楽しむ空間</h1>
+            <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
             <p className="text-xl mb-8">
               自然の美しさとファッションの魅力が出会う特別な場所。
               あなたの暮らしに彩りを添えるアイテムとワークショップをご用意しています。

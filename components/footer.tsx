@@ -5,14 +5,15 @@ export function Footer() {
   return (
     <footer className="w-full border-t bg-[#d1e1d5]">
       <div className="container py-10 mx-auto">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+        {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4"> // リンクなどの他のdiv要素も使う時にコメント解除 */}
+        <div className="flex justify-center items-center">
           <div>
-            <h3 className="text-lg font-semibold">Bloom & Stitch</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              花と服の調和を楽しむ空間
+            <h3 className="text-lg font-semibold ">花もよう</h3>
+            <p className="mt-2 text-sm text-muted-foreground relative right-1">
+              花と雑貨の店
             </p>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold">リンク</h3>
             <ul className="mt-2 space-y-2">
               <li>
@@ -20,11 +21,11 @@ export function Footer() {
                   会社概要
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
                   お問い合わせ
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           <div>
@@ -42,7 +43,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          {/* <div>
+          <div>
             <h3 className="text-lg font-semibold">フォローする</h3>
             <div className="mt-2 flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-foreground">
@@ -59,7 +60,7 @@ export function Footer() {
         </div>
         <div className="mt-10 border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Bloom & Stitch. All rights reserved.
+            © {new Date().getFullYear()} 花もよう. All rights reserved.
           </p>
         </div>
       </div>
