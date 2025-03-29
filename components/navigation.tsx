@@ -28,8 +28,8 @@ export function Navigation() {
           <Flower2 className="h-6 w-6" />
           <Shirt className="h-6 w-6" />
           <span className="font-bold flex flex-col items-center sm:flex-row sm:justify-center">
-            <span className="sm:hidden">花もよう</span>
-            <span className="hidden sm:inline">花もよう</span> {/* Show on larger screens */}
+            <span className="sm:hidden">Hana Moyo</span>
+            <span className="hidden sm:inline">Hana Moyo</span> {/* Show on larger screens */}
           </span>
         </Link>
         <NavigationMenu className='md:ml-[-150px]'>

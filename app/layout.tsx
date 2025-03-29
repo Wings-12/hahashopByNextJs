@@ -8,7 +8,7 @@ import { Footer } from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Bloom & Stitch',
+  title: '花もよう',
   description: 'Flowers, Fashion, and Creative Workshops',
 };
 
