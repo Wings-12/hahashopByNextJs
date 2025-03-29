@@ -195,7 +195,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="container">
+      {/* <section className="container">
         <h2 className="text-3xl font-bold mb-8">お客様の声</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
@@ -228,10 +228,10 @@ export default function Home() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
-      <section className="container">
+      {/* <section className="container">
         <Card>
           <CardContent className="p-6">
             <div className="text-center">
@@ -245,7 +245,7 @@ export default function Home() {
             </div>
           </CardContent>
         </Card>
-      </section>
+      </section> */}
     </div>
   );
 }

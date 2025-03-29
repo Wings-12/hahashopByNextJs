@@ -20,11 +20,11 @@ export function Footer() {
                   会社概要
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
                   お問い合わせ
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
