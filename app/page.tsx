@@ -15,7 +15,7 @@ import { SHOP_PHONE_NUMBER } from '@/lib/constants';
 const newProducts = [
   {
     title: "エキセナ & 宿根サルビア",
-    image: "/images/products/ekinaseaAndshukukonSarubia.jpg",
+    image: "/images/products/flowers/ekinaseaAndshukukonSarubia.jpg",
     price: "¥3,800"
   },
   {

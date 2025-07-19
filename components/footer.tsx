@@ -1,3 +1,5 @@
+'use client';
+
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
@@ -7,12 +9,19 @@ export function Footer() {
       <div className="container py-10 mx-auto">
         {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4"> // リンクなどの他のdiv要素も使う時にコメント解除 */}
         <div className="flex justify-center items-center">
-          <div>
+          <Link
+            href="/"
+            className="flex flex-col items-start no-underline hover:opacity-80 active:opacity-60 focus-visible:ring-2 focus-visible:ring-primary/50 rounded transition cursor-pointer"
+            style={{ WebkitTapHighlightColor: 'transparent' }}
+            onClick={e => { e.currentTarget.blur(); }}
+          >
             <p className="mt-2 text-sm text-muted-foreground relative right-1.5">
               花と雑貨の店
             </p>
-            <h3 className="text-lg font-semibold ">花もよう</h3>
-          </div>
+            <h3 className="text-lg font-semibold decoration-primary underline-offset-4 text-primary">
+              花もよう
+            </h3>
+          </Link>
           {/* <div>
             <h3 className="text-lg font-semibold">リンク</h3>
             <ul className="mt-2 space-y-2">
