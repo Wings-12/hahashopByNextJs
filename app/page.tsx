@@ -93,9 +93,9 @@ export default function Home() {
         <div className="container relative h-full flex items-center justify-center mx-auto">
           <div className="max-w-2xl text-white text-center">
             <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
-            <p className="text-xl mb-8">
-              <span className="line-chunk">自然の美しさと</span><span className="line-chunk">ファッションの魅力</span><span className="line-chunk">が出会う</span>特別な場所。
-              <span className="line-chunk">あなたの暮らしに彩りを添える</span><span className="line-chunk">アイテム</span>と<span className="line-chunk">ワークショップ</span>をご用意しています。
+            <p className="word-break text-xl mb-8">
+              自然の美しさとファッションの魅力が出会う特別な場所。
+              あなたの暮らしに彩りを添えるアイテムとワークショップをご用意しています。
             </p>
             {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
