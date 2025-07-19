@@ -90,12 +90,12 @@ export default function Home() {
           className="object-cover brightness-50"
           priority
         />
-        <div className="container mx-auto relative h-full flex items-center justify-center">
+        <div className="container relative h-full flex items-center justify-center mx-auto">
           <div className="max-w-2xl text-white text-center">
             <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
             <p className="text-xl mb-8">
-              自然の美しさとファッションの魅力が出会う特別な場所。
-              あなたの暮らしに彩りを添えるアイテムとワークショップをご用意しています。
+              <span className="line-chunk">自然の美しさと</span><span className="line-chunk">ファッションの魅力</span><span className="line-chunk">が出会う</span>特別な場所。
+              <span className="line-chunk">あなたの暮らしに彩りを添える</span><span className="line-chunk">アイテム</span>と<span className="line-chunk">ワークショップ</span>をご用意しています。
             </p>
             {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
@@ -230,8 +230,8 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-6 w-full text-center">
-                <div className="flex items-start justify-center space-x-4">
-                  <MapPin className="w-6 h-6 mt-1" />
+                <div className="flex flex-col items-center">
+                  <MapPin className="w-6 h-6 mb-1" />
                   <div>
                     <h3 className="font-semibold mb-2">住所</h3>
                     <a
@@ -245,8 +245,8 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start justify-center space-x-4">
-                  <Clock className="w-6 h-6 mt-1" />
+                <div className="flex flex-col items-center">
+                  <Clock className="w-6 h-6 mb-1" />
                   <div>
                     <h3 className="font-semibold mb-2">営業時間</h3>
                     <p className="text-muted-foreground">
@@ -256,8 +256,8 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start justify-center space-x-4">
-                  <Phone className="w-6 h-6 mt-1" />
+                <div className="flex flex-col items-center">
+                  <Phone className="w-6 h-6 mb-1" />
                   <div>
                     <h3 className="font-semibold mb-2">お問い合わせ</h3>
                     <p className="text-muted-foreground">

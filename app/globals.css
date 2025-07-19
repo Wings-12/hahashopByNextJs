@@ -80,3 +80,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+span.line-chunk {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
