@@ -90,23 +90,23 @@ export default function Home() {
           className="object-cover brightness-50"
           priority
         />
-        <div className="container relative h-full flex items-center">
-          <div className="max-w-2xl text-white">
+        <div className="container mx-auto relative h-full flex items-center justify-center">
+          <div className="max-w-2xl text-white text-center">
             <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
             <p className="text-xl mb-8">
               自然の美しさとファッションの魅力が出会う特別な場所。
               あなたの暮らしに彩りを添えるアイテムとワークショップをご用意しています。
             </p>
-            <Button asChild size="lg">
+            {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
 
       {/* New Products */}
       <section className="container px-10 md:px-20">
-        <h2 className="text-3xl font-bold mb-8">新着商品</h2>
+        <h2 className="flex items-start justify-center text-3xl font-bold mb-8">新着商品</h2>
         <div className="relative">
           <Carousel
             opts={{
@@ -149,7 +149,7 @@ export default function Home() {
 
       {/* Recommended Products */}
       <section className="container px-10 md:px-20">
-        <h2 className="text-3xl font-bold mb-8">おすすめ商品</h2>
+        <h2 className="flex items-start justify-center text-3xl font-bold mb-8">おすすめ商品</h2>
         <div className="relative">
           <Carousel
             opts={{
@@ -219,18 +219,18 @@ export default function Home() {
       <section className="container">
         <Card>
           <CardContent className="p-8">
-            <h2 className="text-3xl font-bold mb-8">お店案内</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="relative h-[300px] mb-6">
-                  <Image
-                    src="/images/shopPlace.jpg"
-                    alt="ワークスペース"
-                    fill
-                    className="object-cover rounded-lg"
-                  />
-                </div>
-                <div className="flex items-start space-x-4">
+            <h2 className="flex items-start justify-center text-3xl font-bold mb-8">お店案内</h2>
+            <div className="flex flex-col items-center max-w-2xl mx-auto">
+              <div className="relative h-[300px] mb-6 w-full">
+                <Image
+                  src="/images/shopPlace.jpg"
+                  alt="ワークスペース"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <div className="space-y-6 w-full text-center">
+                <div className="flex items-start justify-center space-x-4">
                   <MapPin className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-2">住所</h3>
@@ -245,8 +245,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start justify-center space-x-4">
                   <Clock className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-2">営業時間</h3>
@@ -257,15 +256,15 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </div>
-              <div className="flex items-start space-x-4">
+                <div className="flex items-start justify-center space-x-4">
                   <Phone className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-2">お問い合わせ</h3>
-                      <p className="text-muted-foreground">
-                        TEL：<a href={`tel:${SHOP_PHONE_NUMBER.replace(/-/g, '')}`} className="underline hover:text-primary">{SHOP_PHONE_NUMBER}</a>
-                      </p>
+                    <p className="text-muted-foreground">
+                      TEL：<a href={`tel:${SHOP_PHONE_NUMBER.replace(/-/g, '')}`} className="underline hover:text-primary">{SHOP_PHONE_NUMBER}</a>
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
           </CardContent>
