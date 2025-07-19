@@ -46,7 +46,8 @@ export function Navigation() {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-            <NavigationMenuItem>
+
+            {/* 商品説明がまだできてないため、非表示 <NavigationMenuItem>
               <Link href="/products" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(baseNavigationMenuLink,
@@ -55,7 +56,7 @@ export function Navigation() {
                   商品・サービス
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             <NavigationMenuItem>
               <Link href="/workshop" legacyBehavior passHref>
                 <NavigationMenuLink

@@ -7,31 +7,52 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Calendar, MessageCircle, ShoppingBag } from 'lucide-react';
+import { MapPin, Calendar, MessageCircle, ShoppingBag, Clock, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { SHOP_PHONE_NUMBER } from '@/lib/constants';
 
 const newProducts = [
   {
-    title: "春の花束セット",
-    image: "https://images.unsplash.com/photo-1562690868-60bbe7293e94",
+    title: "エキセナ & 宿根サルビア",
+    image: "/images/products/ekinaseaAndshukukonSarubia.jpg",
     price: "¥3,800"
   },
   {
-    title: "リネンワンピース",
-    image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03",
+    title: "アキレア",
+    image: "/images/products/flowers/akirea.jpg",
     price: "¥12,800"
   },
   {
-    title: "手作りクッキーセット",
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e",
-    price: "¥2,400"
+    title: "ペチュニア（ヴァンサンカン）",
+    image: "/images/products/flowers/pechunia.jpg",
+    price: "¥4,200"
   },
   {
-    title: "多肉植物の寄せ植え",
-    image: "https://images.unsplash.com/photo-1459156212016-c812468e2115",
+    title: "ブルースター",
+    image: "/images/products/flowers/bruusutaa.jpg",
     price: "¥4,200"
-  }
+  },
+  {
+    title: "アンゲロニア",
+    image: "/images/products/flowers/angeronia.jpg",
+    price: "¥4,200"
+  },
+  {
+    title: "アプテニア（斑入り）",
+    image: "/images/products/flowers/aputenia_madarairi.jpg",
+    price: "¥4,200"
+  },
+  {
+    title: "アーティシャルフラワー１",
+    image: "/images/products/flowers/artificial/artificialFlower1.jpg",
+    price: "¥4,200"
+  },
+  {
+    title: "アーティシャルフラワー２",
+    image: "/images/products/flowers/artificial/artificialFlower2.jpg",
+    price: "¥4,200"
+  },
 ];
 
 const recommendedProducts = [
@@ -173,7 +194,7 @@ export default function Home() {
       <section className="container">
         <div className="relative rounded-lg overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1464699908537-0954e50791ee"
+            src="/images/services/workshop/workingSpace.jpg"
             alt="ワークショップ"
             width={1200}
             height={400}
@@ -193,6 +214,65 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Workshop Information */}
+      <section className="container">
+        <Card>
+          <CardContent className="p-8">
+            <h2 className="text-3xl font-bold mb-8">お店案内</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="relative h-[300px] mb-6">
+                  <Image
+                    src="/images/shopPlace.jpg"
+                    alt="ワークスペース"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex items-start space-x-4">
+                  <MapPin className="w-6 h-6 mt-1" />
+                  <div>
+                    <h3 className="font-semibold mb-2">住所</h3>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=茨城県水戸市堀町1857-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground underline hover:text-blue-600"
+                    >
+                      〒1310-0903<br/>
+                      茨城県水戸市堀町1857-2
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <Clock className="w-6 h-6 mt-1" />
+                  <div>
+                    <h3 className="font-semibold mb-2">営業時間</h3>
+                    <p className="text-muted-foreground">
+                      11:00 - 18:00<br/>
+                      定休日：火・水曜日<br/>
+                      ※祝日は営業します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                  <Phone className="w-6 h-6 mt-1" />
+                  <div>
+                    <h3 className="font-semibold mb-2">お問い合わせ</h3>
+                      <p className="text-muted-foreground">
+                        TEL：<a href={`tel:${SHOP_PHONE_NUMBER.replace(/-/g, '')}`} className="underline hover:text-primary">{SHOP_PHONE_NUMBER}</a>
+                      </p>
+                  </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Google Mapを埋め込んでお店の場所を表示*/}
 
       {/* Testimonials */}
       {/* <section className="container">

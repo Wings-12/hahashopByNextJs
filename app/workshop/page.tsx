@@ -7,6 +7,8 @@ import {
 } from '@/components/ui/accordion';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
+import { Phone } from 'lucide-react';
+import { SHOP_PHONE_NUMBER } from '@/lib/constants';
 
 const faqs = [
   {
@@ -37,7 +39,7 @@ export default function WorkshopPage() {
           <CardContent className="p-6 space-y-6">
             <div className="relative h-[400px] w-full">
               <Image
-                src="https://images.unsplash.com/photo-1464699908537-0954e50791ee"
+                src="/images/services/workshop/workingSpace.jpg"
                 alt="ワークショップ"
                 fill
                 className="object-cover rounded-lg"
@@ -54,9 +56,37 @@ export default function WorkshopPage() {
               <p className="text-lg">
                 草花の鉢をご購入のお客様向けに、寄せ植えやハンギング、リース作成のレッスンも無料で承ります。（材料費別途）
               </p>
-              <Button className="w-full md:w-auto" size="lg" asChild>
+              {/* 利用可能な生地イメージ */}
+              <Card className="bg-muted/50">
+                <CardContent className="flex flex-col items-center p-6 space-y-3">
+                  <h3 className="font-semibold text-lg">利用可能な生地イメージ</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <Image src="/images/services/workshop/fabric/kiji1.jpg" alt="生地1" width={400} height={400} />
+                    <Image src="/images/services/workshop/fabric/kiji2.jpg" alt="生地2" width={400} height={400} />
+                  </div>
+                </CardContent>
+            </Card>
+
+              {/* 予約・お問い合わせボタン */}
+              <Card className="bg-muted/50">
+                <CardContent className="flex flex-col items-center p-6 space-y-3">
+                  <div className="bg-primary/10 rounded-full p-3 mb-2">
+                    <Phone className="w-8 h-8 text-primary text-green-500" />
+                  </div>
+                  <h3 className="font-semibold text-lg">予約・お問い合わせ</h3>
+                  <p className="text-muted-foreground text-center">
+                    TEL：<a href={`tel:${SHOP_PHONE_NUMBER.replace(/-/g, '')}`} className="underline hover:text-primary">{SHOP_PHONE_NUMBER}</a>
+                  </p>
+                  <Button size="lg" asChild>
+                    <a href={`tel:${SHOP_PHONE_NUMBER.replace(/-/g, '')}`}>電話する</a>
+                  </Button>
+                  {/* 予約フォームがあればここにリンクボタン */}
+                </CardContent>
+            </Card>
+
+              {/* <Button className="w-full md:w-auto" size="lg" asChild>
                 <a href="#" target="_blank" rel="noopener noreferrer">予約する</a>
-              </Button>
+              </Button> */}
             </div>
           </CardContent>
         </Card>
