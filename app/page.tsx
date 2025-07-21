@@ -166,7 +166,7 @@ export default function Home() {
                         src={product.image}
                         alt={product.title}
                         fill
-                        className="object-contain" // 見切れないように全体を収める
+                        className="object-cover"
                       />
                     </div>
                     <div className="p-4 border-t">
@@ -208,7 +208,7 @@ export default function Home() {
                           src={product.image}
                           alt={product.title}
                           fill
-                          className="object-contain rounded-t-lg"
+                          className="object-cover object-[center_30%] rounded-t-lg"
                         />
                       </div>
                       <div className="p-4">
