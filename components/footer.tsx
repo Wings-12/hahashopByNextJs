@@ -11,12 +11,12 @@ export function Footer() {
         <div className="flex justify-center items-center">
           <Link
             href="/"
-            className="flex flex-col items-start no-underline hover:opacity-80 active:opacity-60 focus-visible:ring-2 focus-visible:ring-primary/50 rounded transition cursor-pointer"
+            className="flex flex-col items-center no-underline hover:opacity-80 active:opacity-60 focus-visible:ring-2 focus-visible:ring-primary/50 rounded transition cursor-pointer"
             style={{ WebkitTapHighlightColor: 'transparent' }}
             onClick={e => { e.currentTarget.blur(); }}
           >
-            <p className="mt-2 text-sm text-muted-foreground relative right-1.5">
-              花と雑貨の店
+            <p className="mt-2 text-sm text-muted-foreground">
+              花と緑と雑貨の店
             </p>
             <h3 className="text-lg font-semibold decoration-primary underline-offset-4 text-primary">
               花もよう

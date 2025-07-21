@@ -127,7 +127,7 @@ export default function Home() {
         />
         <div className="container relative h-full flex items-center justify-center mx-auto">
           <div className="max-w-2xl text-white text-center">
-            <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
+            <h1 className="text-5xl font-bold mb-6">花と緑と雑貨の店</h1>
             <p className="word-break text-xl mb-8">
               自然の美しさとファッションの魅力が<br></br>出会う特別な場所。
               あなたの暮らしに彩りを添えるアイテムとワークスペースをご用意しています。
