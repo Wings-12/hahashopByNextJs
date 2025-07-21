@@ -243,8 +243,8 @@ export default function Home() {
         <div className="mt-6 max-w-2xl mx-auto bg-yellow-50 border border-yellow-200 rounded-lg p-4">
           <h4 className="font-bold text-yellow-900 mb-2 text-base text-center">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
           <p className="text-sm text-yellow-800 list-disc list-outside pl-5">
-          ・商品は売り切れる場合があります。<br></br>
-          ・こちらに表示されている以外にも<br></br>　お選び頂けます。
+          　　　・商品は売り切れる場合があります。<br></br>
+          　　　・こちらに表示されている以外にも<br></br>　　　　お選び頂けます。
           </p>
         </div>
       </section>
