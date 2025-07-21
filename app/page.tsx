@@ -52,6 +52,16 @@ const newProducts = [
 
 const recommendedProducts = [
   {
+    title: "エバーフレッシュ（ネムの木）8号鉢",
+    image: "/images/products/flowers/ebaahuressyu(nemunoki)8goubachi.jpg",
+    price: "¥5800（税込）"
+  },
+  {
+    title: "パキラ（網）10号鉢",
+    image: "/images/products/flowers/pakira10goubachi.jpg",
+    price: "¥6800（税込）"
+  },
+  {
     title: "サンスベリア4号鉢",
     image: "/images/products/flowers/sansuberia4gouhachi.jpg",
     price: "¥550（税込）"
@@ -70,11 +80,6 @@ const recommendedProducts = [
     title: "コルジリネ（レッドスターズ）",
     image: "/images/products/flowers/koruzirine(reddosutaazu).jpg",
     price: "¥650（税込）"
-  },
-  {
-    title: "エバーフレッシュ（ネムの木）8号鉢",
-    image: "/images/products/flowers/ebaahuressyu(nemunoki)8goubachi.jpg",
-    price: "¥5800（税込）"
   },
   {
     title: "コンパクター（ドラセナ）8号鉢",
@@ -155,7 +160,7 @@ export default function Home() {
                 <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
                   <Card>
                     <CardContent className="p-0">
-                      <div className="relative h-64">
+                      <div className="relative h-80">
                         <Image
                           src={product.image}
                           alt={product.title}
@@ -198,7 +203,7 @@ export default function Home() {
                 <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
                   <Card>
                     <CardContent className="p-0">
-                      <div className="relative h-64">
+                      <div className="relative h-80">
                         <Image
                           src={product.image}
                           alt={product.title}
@@ -244,7 +249,7 @@ export default function Home() {
           <h4 className="font-bold text-yellow-900 mb-2">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
           <p className="text-sm text-yellow-800 list-disc list-outside pl-5">
           ・商品は売り切れる場合があります。<br></br>
-          ・こちらに表示されている以外にも、<br></br>　お選び頂けます。
+          ・こちらに表示されている以外にも<br></br>　お選び頂けます。
           </p>
         </div>
       </section>
