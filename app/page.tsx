@@ -73,7 +73,7 @@ const recommendedProducts = [
   },
   {
     title: "カラテア6号鉢",
-    image: "/images/products/flowers/karatea6gouhachi.jpg",
+    image: "/images/products/flowers/karatea6gouhachi.png",
     price: "¥1600（税込）"
   },
   {
