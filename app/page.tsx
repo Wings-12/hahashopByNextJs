@@ -158,23 +158,23 @@ export default function Home() {
             <CarouselContent>
               {newProducts.map((product) => (
                 <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
-                  <Card>
-                    <CardContent className="p-0">
-                      <div className="relative h-80">
-                        <Image
-                          src={product.image}
-                          alt={product.title}
-                          fill
-                          className="object-cover rounded-t-lg"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-semibold">{product.title}</h3>
-                        {/* <p className="text-muted-foreground">{product.price}</p> */}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
+                <Card className="flex flex-col h-full">
+                  <CardContent className="p-0 flex-grow">
+                    {/* ✨ bg-slate-100 を追加して、余白の色を薄いグレーにする */}
+                    <div className="relative w-full h-80 bg-green-50 rounded-t-lg">
+                      <Image
+                        src={product.image}
+                        alt={product.title}
+                        fill
+                        className="object-contain" // 見切れないように全体を収める
+                      />
+                    </div>
+                    <div className="p-4 border-t">
+                      <h3 className="font-semibold">{product.title}</h3>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
               ))}
             </CarouselContent>
             <div className="absolute left-2 top-1/2 -translate-y-1/2">
@@ -203,12 +203,12 @@ export default function Home() {
                 <CarouselItem key={product.title} className="md:basis-1/3 lg:basis-1/4">
                   <Card>
                     <CardContent className="p-0">
-                      <div className="relative h-80">
+                      <div className="relative h-80 bg-green-50">
                         <Image
                           src={product.image}
                           alt={product.title}
                           fill
-                          className="object-cover rounded-t-lg"
+                          className="object-contain rounded-t-lg"
                         />
                       </div>
                       <div className="p-4">
@@ -249,7 +249,7 @@ export default function Home() {
           <h4 className="font-bold text-yellow-900 mb-2">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
           <p className="text-sm text-yellow-800 list-disc list-outside pl-5">
           ・商品は売り切れる場合があります。<br></br>
-          ・こちらに表示されている以外にも<br></br>　お選び頂けます。
+          ・こちらに表示されているもの以外も<br></br>　お選び頂けます。
           </p>
         </div>
       </section>
