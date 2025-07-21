@@ -77,8 +77,8 @@ export default function WorkshopPage() {
                       <Image src="/images/services/workshop/fabric/kiji2.jpg" alt="生地2" width={400} height={400} />
                     </div>
                     <h3 className="font-semibold text-lg">購入アーティフィシャルフラワー<br></br>イメージ</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <Image src="/images/products/flowers/artificial/purchasableArtificialFlower.jpg" alt="生地1" width={400} height={400} />
+                    <div>
+                      <Image src="/images/products/flowers/artificial/purchasableArtificialFlower.jpg" alt="購入アーティフィシャルフラワー" width={400} height={400} />
                     </div>
                   </CardContent>
                 </Card>

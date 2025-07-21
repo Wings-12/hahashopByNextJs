@@ -130,7 +130,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
             <p className="word-break text-xl mb-8">
               自然の美しさとファッションの魅力が<br></br>出会う特別な場所。
-              あなたの暮らしに彩りを添えるアイテムとワークスペースを<br></br>ご用意しています。
+              あなたの暮らしに彩りを添えるアイテムとワークスペースをご用意しています。
             </p>
             {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
@@ -240,11 +240,11 @@ export default function Home() {
           </div>
         </div>
         {/* 新着商品・おすすめ商品・店長からのオススメに関する注意書き */}
-        <div className="mt-6 max-w-2xl mx-auto bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-          <h4 className="font-bold text-yellow-900 mb-2 text-base text-center">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
+        <div className="mt-6 max-w-2xl mx-auto bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-base text-center">
+          <h4 className="font-bold text-yellow-900 mb-2">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
           <p className="text-sm text-yellow-800 list-disc list-outside pl-5">
-          　　　・商品は売り切れる場合があります。<br></br>
-          　　　・こちらに表示されている以外にも<br></br>　　　　お選び頂けます。
+          ・商品は売り切れる場合があります。<br></br>
+          ・こちらに表示されている以外にも、<br></br>　お選び頂けます。
           </p>
         </div>
       </section>
