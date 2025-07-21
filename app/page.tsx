@@ -14,7 +14,7 @@ import { SHOP_PHONE_NUMBER } from '@/lib/constants';
 
 const newProducts = [
   {
-    title: "エキセナ & 宿根サルビア",
+    title: "エキナセア & 宿根サルビア",
     image: "/images/products/flowers/ekinaseaAndshukukonSarubia.jpg",
     price: "¥3,800"
   },
@@ -57,7 +57,7 @@ const recommendedProducts = [
     price: "¥5800（税込）"
   },
   {
-    title: "パキラ（網）10号鉢",
+    title: "パキラ（編）10号鉢",
     image: "/images/products/flowers/pakira10goubachi.jpg",
     price: "¥6800（税込）"
   },
@@ -77,7 +77,7 @@ const recommendedProducts = [
     price: "¥1600（税込）"
   },
   {
-    title: "コルジリネ（レッドスターズ）",
+    title: "コルジリネ（レッドスター）4号鉢",
     image: "/images/products/flowers/koruzirine(reddosutaazu).jpg",
     price: "¥650（税込）"
   },
@@ -94,12 +94,12 @@ const recommendedProducts = [
   {
     title: "ユッカ（青年の木）10号鉢",
     image: "/images/products/flowers/yukka(seinennoki)10goubachi.jpg",
-    price: "¥7800円（税込）"
+    price: "¥7800（税込）"
   },
   {
     title: "モンステラ 6号鉢",
     image: "/images/products/flowers/monstera6goubachi.jpg",
-    price: "¥7800円（税込）"
+    price: "¥980（税込）"
   },
   {
     title: "コンシンネ（ドラセナ）10号鉢",
@@ -110,11 +110,6 @@ const recommendedProducts = [
     title: "アレカヤシ10号鉢",
     image: "/images/products/flowers/arekayashi10goubachi.jpg",
     price: "¥5500（税込）"
-  },
-  {
-    title: "ユッカ（青年の木）10号鉢",
-    image: "/images/products/flowers/yukka(seinennoki)10goubachi.jpg",
-    price: "¥7800円（税込）"
   },
 ];
 
@@ -228,10 +223,10 @@ export default function Home() {
             </div>
           </Carousel>
         </div>
-        {/* 店長からのオススメ ギフト提案セクション */}
+        {/* 店主のオススメ ギフト提案セクション */}
         <div className="mt-10 flex flex-col items-center justify-center bg-green-50 rounded-lg shadow-md p-8 border border-green-200 max-w-2xl mx-auto">
           <h3 className="text-2xl font-bold text-green-900 mb-4 flex items-center gap-2">
-            <span role="img" aria-label="店長">🌿</span>店主からのイチオシ
+            <span role="img" aria-label="店主">🌿</span>店主のイチオシ
           </h3>
           <p className="text-lg text-green-800 mb-2 font-semibold text-center">観葉植物をプレゼント用に<br></br>いかがですか？</p>
           <div className="flex flex-col md:flex-row items-center gap-6 mb-4">
@@ -244,9 +239,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* 新着商品・おすすめ商品・店長からのオススメに関する注意書き */}
+        {/* 新着商品・おすすめ商品・店主のオススメに関する注意書き */}
         <div className="mt-6 max-w-2xl mx-auto bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-base text-center">
-          <h4 className="font-bold text-yellow-900 mb-2">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
+          <h4 className="font-bold text-yellow-900 mb-2">※新着商品・おすすめ商品・<br></br>店主のイチオシについて</h4>
           <p className="text-sm text-yellow-800 list-disc list-outside pl-5">
           ・商品は売り切れる場合があります。<br></br>
           ・こちらに表示されているもの以外も<br></br>　お選び頂けます。
