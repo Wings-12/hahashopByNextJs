@@ -301,7 +301,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="text-muted-foreground underline hover:text-blue-600"
                     >
-                      〒1310-0903<br/>
+                      〒310-0903<br/>
                       茨城県水戸市堀町1857-2
                     </a>
                   </div>
