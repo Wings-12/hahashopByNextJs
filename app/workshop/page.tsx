@@ -48,15 +48,15 @@ export default function WorkshopPage() {
                   priority
                 />
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 text-center">
                 <p className="text-lg">
-                  アーティフィシャルフラワーや洋服の生地をご購入のお客様は、無料で作り方をお教えします。
+                  アーティフィシャルフラワーや<br></br>洋服の生地をご購入のお客様は、<br></br>無料で作り方をお教えします。
                 </p>
                 <p className="text-lg">
-                  ワークスペースのご利用は1時間500円となります。
+                  ワークスペースのご利用は<br></br>1時間500円となります。
                 </p>
                 <p className="text-lg">
-                  草花の鉢をご購入のお客様向けに、寄せ植えやハンギング、リース作成のレッスンも無料で承ります。（材料費別途）
+                  草花の鉢をご購入のお客様向けに、<br></br>寄せ植えやハンギング、<br></br>リース作成のレッスンも<br></br>無料で承ります。<br></br>（材料費別途）
                 </p>
                 {/* 利用可能な生地イメージ */}
                 <Card className="bg-muted/50">

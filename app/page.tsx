@@ -228,7 +228,7 @@ export default function Home() {
           <h3 className="text-2xl font-bold text-green-900 mb-4 flex items-center gap-2">
             <span role="img" aria-label="店長">🌿</span>店長からのイチオシ
           </h3>
-          <p className="text-lg text-green-800 mb-2 font-semibold text-center">観葉植物をプレゼント用に<br></br>如何ですか？</p>
+          <p className="text-lg text-green-800 mb-2 font-semibold text-center">観葉植物をプレゼント用に<br></br>いかがですか？</p>
           <div className="flex flex-col md:flex-row items-center gap-6 mb-4">
             <div className="flex gap-4">
               <Image src="/images/products/flowers/karatea4gouhachi.jpg" alt="カラテア" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
@@ -236,17 +236,17 @@ export default function Home() {
               <Image src="/images/products/flowers/akirea.jpg" alt="アロマティカス（ハーブ）" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
             </div>
             <div className="text-center md:text-left">
-              <span className="block text-green-900 font-bold text-xl mb-1">カラテア＆ポトス＆<br></br>アロマティカス（ハーブ）</span>
+              <span className="block text-green-900 font-bold text-xl mb-1">カラテア＆ポトス＆<br></br>アロマティカス<br></br>（ハーブ）</span>
               <span className="block text-green-700 text-lg">カゴに入れて<br></br><span className="font-bold text-pink-600 text-2xl">￥1,890（税込）</span></span>
             </div>
           </div>
         </div>
         {/* 新着商品・おすすめ商品・店長からのオススメに関する注意書き */}
         <div className="mt-6 max-w-2xl mx-auto bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-          <h4 className="font-bold text-yellow-900 mb-2 text-base text-center">※新着商品・おすすめ商品・店長からの<br></br>イチオシについて</h4>
+          <h4 className="font-bold text-yellow-900 mb-2 text-base text-center">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
           <ul className="text-sm text-yellow-800 list-disc list-outside pl-5">
             <li>商品は売り切れる場合があります。</li>
-            <li>こちらに表示されている以外にもお選び頂けます。</li>
+            <li>こちらに表示されている以外にも<br></br>お選び頂けます。</li>
           </ul>
         </div>
       </section>
@@ -266,7 +266,8 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-4">ワークスペース</h2>
               <p className="mb-6 max-w-2xl mx-auto">
                 フラワーアレンジメントから洋服作りまで、
-                様々なクリエイティブな体験をご用意しています。
+                <br></br>様々なクリエイティブな体験を
+                <br></br>ご用意しています。
               </p>
               <Button asChild size="lg" variant="outline" className="text-white border-white bg-black hover:bg-white hover:text-black">
                 <Link href="/workshop">詳しく見る</Link>
