@@ -9,7 +9,7 @@
 ### 2. 商品・サービス
 <img width="1589" alt="image" src="https://github.com/user-attachments/assets/366e876a-2fe6-4b88-ba43-4d7f91f54904" />
 
-### 3. ワークショップ
+### 3. ワークスペース
 <img width="1578" alt="image" src="https://github.com/user-attachments/assets/00d6f39a-3c76-49c9-84db-e1864f796ef4" />
 
 ## 概要

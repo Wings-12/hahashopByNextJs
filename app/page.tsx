@@ -21,7 +21,7 @@ const newProducts = [
   {
     title: "アキレア",
     image: "/images/products/flowers/akirea.jpg",
-    price: "¥12,800"
+    price: "¥220"
   },
   {
     title: "ペチュニア（ヴァンサンカン）",
@@ -44,12 +44,7 @@ const newProducts = [
     price: "¥4,200"
   },
   {
-    title: "アーティシャルフラワー１",
-    image: "/images/products/flowers/artificial/artificialFlower1.jpg",
-    price: "¥4,200"
-  },
-  {
-    title: "アーティシャルフラワー２",
+    title: "アーティフィシャルフラワー(壁掛け)",
     image: "/images/products/flowers/artificial/artificialFlower2.jpg",
     price: "¥4,200"
   },
@@ -57,25 +52,65 @@ const newProducts = [
 
 const recommendedProducts = [
   {
-    title: "季節のドライフラワー",
-    image: "https://images.unsplash.com/photo-1589244159943-460088ed5c1e",
-    price: "¥2,800"
+    title: "サンスベリア4号鉢",
+    image: "/images/products/flowers/sansuberia4gouhachi.jpg",
+    price: "¥550（税込）"
   },
   {
-    title: "コットンブラウス",
-    image: "https://images.unsplash.com/photo-1551163943-3f6a855d1153",
-    price: "¥9,800"
+    title: "カラテア4号鉢",
+    image: "/images/products/flowers/karatea4gouhachi.jpg",
+    price: "¥880（税込）"
   },
   {
-    title: "ハーブティーセット",
-    image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3",
-    price: "¥3,200"
+    title: "カラテア6号鉢",
+    image: "/images/products/flowers/karatea6gouhachi.jpg",
+    price: "¥1600（税込）"
   },
   {
-    title: "フラワーベース",
-    image: "https://images.unsplash.com/photo-1578426720323-6d3b67133446",
-    price: "¥5,600"
-  }
+    title: "コルジリネ（レッドスターズ）",
+    image: "/images/products/flowers/koruzirine(reddosutaazu).jpg",
+    price: "¥650（税込）"
+  },
+  {
+    title: "エバーフレッシュ（ネムの木）8号鉢",
+    image: "/images/products/flowers/ebaahuressyu(nemunoki)8goubachi.jpg",
+    price: "¥5800（税込）"
+  },
+  {
+    title: "コンパクター（ドラセナ）8号鉢",
+    image: "/images/products/flowers/konpakutaa(dorasena)8goubachi.jpg",
+    price: "¥4800（税込）"
+  },
+  {
+    title: "ベンガレンシス（フィッカス）7号鉢",
+    image: "/images/products/flowers/bengarensisu(fikkasu)7gouhachi.jpg",
+    price: "¥5500（税込）"
+  },
+  {
+    title: "ユッカ（青年の木）10号鉢",
+    image: "/images/products/flowers/yukka(seinennoki)10goubachi.jpg",
+    price: "¥7800円（税込）"
+  },
+  {
+    title: "モンステラ 6号鉢",
+    image: "/images/products/flowers/monstera6goubachi.jpg",
+    price: "¥7800円（税込）"
+  },
+  {
+    title: "コンシンネ（ドラセナ）10号鉢",
+    image: "/images/products/flowers/konshinne(dorasena)10goubachi.jpg",
+    price: "¥6800（税込）"
+  },
+  {
+    title: "アレカヤシ10号鉢",
+    image: "/images/products/flowers/arekayashi10goubachi.jpg",
+    price: "¥5500（税込）"
+  },
+  {
+    title: "ユッカ（青年の木）10号鉢",
+    image: "/images/products/flowers/yukka(seinennoki)10goubachi.jpg",
+    price: "¥7800円（税込）"
+  },
 ];
 
 export default function Home() {
@@ -95,7 +130,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
             <p className="word-break text-xl mb-8">
               自然の美しさとファッションの魅力が出会う特別な場所。
-              あなたの暮らしに彩りを添えるアイテムとワークショップをご用意しています。
+              あなたの暮らしに彩りを添えるアイテムとワークスペースをご用意しています。
             </p>
             {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
@@ -130,7 +165,7 @@ export default function Home() {
                       </div>
                       <div className="p-4">
                         <h3 className="font-semibold">{product.title}</h3>
-                        <p className="text-muted-foreground">{product.price}</p>
+                        {/* <p className="text-muted-foreground">{product.price}</p> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -188,6 +223,32 @@ export default function Home() {
             </div>
           </Carousel>
         </div>
+        {/* 店長からのオススメ ギフト提案セクション */}
+        <div className="mt-10 flex flex-col items-center justify-center bg-green-50 rounded-lg shadow-md p-8 border border-green-200 max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold text-green-900 mb-4 flex items-center gap-2">
+            <span role="img" aria-label="店長">🌿</span>店長からのイチオシ
+          </h3>
+          <p className="text-lg text-green-800 mb-2 font-semibold text-center">観葉植物をプレゼント用に<br></br>如何ですか？</p>
+          <div className="flex flex-col md:flex-row items-center gap-6 mb-4">
+            <div className="flex gap-4">
+              <Image src="/images/products/flowers/karatea4gouhachi.jpg" alt="カラテア" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
+              <Image src="/images/products/flowers/pots/placeholder.jpg" alt="ポトス" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
+              <Image src="/images/products/flowers/akirea.jpg" alt="アロマティカス（ハーブ）" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
+            </div>
+            <div className="text-center md:text-left">
+              <span className="block text-green-900 font-bold text-xl mb-1">カラテア＆ポトス＆<br></br>アロマティカス（ハーブ）</span>
+              <span className="block text-green-700 text-lg">カゴに入れて<br></br><span className="font-bold text-pink-600 text-2xl">￥1,890（税込）</span></span>
+            </div>
+          </div>
+        </div>
+        {/* 新着商品・おすすめ商品・店長からのオススメに関する注意書き */}
+        <div className="mt-6 max-w-2xl mx-auto bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+          <h4 className="font-bold text-yellow-900 mb-2 text-base text-center">※新着商品・おすすめ商品・店長からの<br></br>イチオシについて</h4>
+          <ul className="text-sm text-yellow-800 list-disc list-outside pl-5">
+            <li>商品は売り切れる場合があります。</li>
+            <li>こちらに表示されている以外にもお選び頂けます。</li>
+          </ul>
+        </div>
       </section>
 
       {/* Workshop Section */}
@@ -195,14 +256,14 @@ export default function Home() {
         <div className="relative rounded-lg overflow-hidden">
           <Image
             src="/images/services/workshop/workingSpace.jpg"
-            alt="ワークショップ"
+            alt="ワークスペース"
             width={1200}
             height={400}
             className="object-cover w-full h-[400px]"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="text-center text-white">
-              <h2 className="text-3xl font-bold mb-4">ワークショップ</h2>
+              <h2 className="text-3xl font-bold mb-4">ワークスペース</h2>
               <p className="mb-6 max-w-2xl mx-auto">
                 フラワーアレンジメントから洋服作りまで、
                 様々なクリエイティブな体験をご用意しています。
@@ -250,9 +311,8 @@ export default function Home() {
                   <div>
                     <h3 className="font-semibold mb-2">営業時間</h3>
                     <p className="text-muted-foreground">
-                      11:00 - 18:00<br/>
+                      10:00 - 18:00<br/>
                       定休日：火・水曜日<br/>
-                      ※祝日は営業します。
                     </p>
                   </div>
                 </div>
@@ -280,7 +340,7 @@ export default function Home() {
           {[
             {
               name: "田中さゆり",
-              comment: "フラワーアレンジメントのワークショップに参加しました。先生の丁寧な指導のおかげで、素敵な作品が作れました。",
+              comment: "フラワーアレンジメントのワークスペースに参加しました。先生の丁寧な指導のおかげで、素敵な作品が作れました。",
               image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
             },
             {
@@ -316,7 +376,7 @@ export default function Home() {
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-4">お問い合わせ</h2>
               <p className="mb-6 text-muted-foreground">
-                商品やワークショップについて、お気軽にお問い合わせください。
+                商品やワークスペースについて、お気軽にお問い合わせください。
               </p>
               <Button asChild size="lg">
                 <Link href="/contact">お問い合わせする</Link>

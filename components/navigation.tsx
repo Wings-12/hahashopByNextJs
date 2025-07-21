@@ -36,7 +36,7 @@ export function Navigation() {
           <NavigationMenuList className='w-full gap-x-4'>
           {/*
 +           NOTE: 「商品・サービス」ページを再度表示する際は、gap-x-4は削除してください。
-+           現在はホームとワークショップの間隔を広げるために追加しています。
++           現在はホームとワークスペースの間隔を広げるために追加しています。
 +         */}
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
@@ -69,7 +69,7 @@ export function Navigation() {
                     additionalWorkshopClassName
                   )}
                 >
-                  ワークショップ
+                  ワークスペース
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
