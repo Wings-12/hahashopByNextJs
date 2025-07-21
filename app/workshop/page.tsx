@@ -36,7 +36,7 @@ export default function WorkshopPage() {
       <div className="container mx-auto">
         {/* ワークスペース情報セクション */}
         <section>
-          <h1 className="flex items-start justify-center text-4xl ext-4xl font-bold mb-8">ワークスペース情報</h1>
+          <h1 className="flex items-start justify-center text-4xl ext-4xl font-bold mb-8">ワークスペース</h1>
           <Card>
             <CardContent className="p-6 space-y-6">
               <div className="relative h-[400px] w-full">
@@ -49,15 +49,25 @@ export default function WorkshopPage() {
                 />
               </div>
               <div className="space-y-4 text-center">
+                <h3 className="text-lg font-semibold">できること</h3>
+                <ol className="list-decimal list-inside mt-2 space-y-2 text-center inline-block">
+                  <li>
+                    生地をご購入のお客様には、<br />
+                    &emsp;洋服の作り方をワークスペースで<br></br>お教えします。
+                  </li>
+                  <li>
+                    アーティフィシャルフラワーを<br></br>ご購入のお客様には、<br />
+                    &emsp;壁掛け・リースなどの作り方を<br></br>お教えします。
+                  </li>
+                </ol>
+                <h3 className="text-lg font-semibold">ワークスペースの利用料金</h3>
                 <p className="text-lg">
-                  アーティフィシャルフラワーや<br></br>洋服の生地をご購入のお客様は、<br></br>無料で作り方をお教えします。
+                  1時間500円となります。
                 </p>
-                <p className="text-lg">
-                  ワークスペースのご利用は<br></br>1時間500円となります。
-                </p>
+                {/* <h3 className="text-lg font-semibold">無料利用</h3>
                 <p className="text-lg">
                   草花の鉢をご購入のお客様向けに、<br></br>寄せ植えやハンギング、<br></br>リース作成のレッスンも<br></br>無料で承ります。<br></br>（材料費別途）
-                </p>
+                </p> */}
                 {/* 利用可能な生地イメージ */}
                 <Card className="bg-muted/50">
                   <CardContent className="flex flex-col items-center p-6 space-y-3">
@@ -65,6 +75,10 @@ export default function WorkshopPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <Image src="/images/services/workshop/fabric/kiji1.jpg" alt="生地1" width={400} height={400} />
                       <Image src="/images/services/workshop/fabric/kiji2.jpg" alt="生地2" width={400} height={400} />
+                    </div>
+                    <h3 className="font-semibold text-lg">購入アーティフィシャルフラワー<br></br>イメージ</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <Image src="/images/products/flowers/artificial/purchasableArtificialFlower.jpg" alt="生地1" width={400} height={400} />
                     </div>
                   </CardContent>
                 </Card>

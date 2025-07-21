@@ -119,7 +119,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px] w-full">
         <Image
-          src="https://images.unsplash.com/photo-1558882224-dda166733046"
+          src="/images/homeMain/naikan.png"
           alt="Hero image"
           fill
           className="object-cover brightness-50"
@@ -130,7 +130,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold mb-6">花と雑貨の店</h1>
             <p className="word-break text-xl mb-8">
               自然の美しさとファッションの魅力が<br></br>出会う特別な場所。
-              あなたの暮らしに彩りを添えるアイテムとワークスペースをご用意しています。
+              あなたの暮らしに彩りを添えるアイテムとワークスペースを<br></br>ご用意しています。
             </p>
             {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
@@ -226,14 +226,12 @@ export default function Home() {
         {/* 店長からのオススメ ギフト提案セクション */}
         <div className="mt-10 flex flex-col items-center justify-center bg-green-50 rounded-lg shadow-md p-8 border border-green-200 max-w-2xl mx-auto">
           <h3 className="text-2xl font-bold text-green-900 mb-4 flex items-center gap-2">
-            <span role="img" aria-label="店長">🌿</span>店長からのイチオシ
+            <span role="img" aria-label="店長">🌿</span>店主からのイチオシ
           </h3>
           <p className="text-lg text-green-800 mb-2 font-semibold text-center">観葉植物をプレゼント用に<br></br>いかがですか？</p>
           <div className="flex flex-col md:flex-row items-center gap-6 mb-4">
             <div className="flex gap-4">
-              <Image src="/images/products/flowers/karatea4gouhachi.jpg" alt="カラテア" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
-              <Image src="/images/products/flowers/pots/placeholder.jpg" alt="ポトス" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
-              <Image src="/images/products/flowers/akirea.jpg" alt="アロマティカス（ハーブ）" width={80} height={80} className="rounded-lg border border-green-200 bg-white" />
+              <Image src="/images/products/flowers/3tensetto.jpg" alt="3点セット" width={300} height={80} className="rounded-lg border border-green-200 bg-white" />
             </div>
             <div className="text-center md:text-left">
               <span className="block text-green-900 font-bold text-xl mb-1">カラテア＆ポトス＆<br></br>アロマティカス<br></br>（ハーブ）</span>
@@ -246,7 +244,7 @@ export default function Home() {
           <h4 className="font-bold text-yellow-900 mb-2 text-base text-center">※新着商品・おすすめ商品・<br></br>店長からのイチオシについて</h4>
           <p className="text-sm text-yellow-800 list-disc list-outside pl-5">
           ・商品は売り切れる場合があります。<br></br>
-          ・こちらに表示されている以外にも<br></br>お選び頂けます。
+          ・こちらに表示されている以外にも<br></br>　お選び頂けます。
           </p>
         </div>
       </section>
@@ -283,9 +281,9 @@ export default function Home() {
           <CardContent className="p-8">
             <h2 className="flex items-start justify-center text-3xl font-bold mb-8">お店案内</h2>
             <div className="flex flex-col items-center max-w-2xl mx-auto">
-              <div className="relative h-[300px] mb-6 w-full">
+              <div className="relative h-[250px] mb-6 w-full">
                 <Image
-                  src="/images/shopPlace.jpg"
+                  src="/images/shopPlace.png"
                   alt="ワークスペース"
                   fill
                   className="object-cover rounded-lg"
