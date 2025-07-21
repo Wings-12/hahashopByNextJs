@@ -1,1 +1,1 @@
-export const SHOP_PHONE_NUMBER = '0293-06-9888';
+export const SHOP_PHONE_NUMBER = '029-306-9888';
