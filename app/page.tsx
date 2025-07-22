@@ -129,8 +129,10 @@ export default function Home() {
           <div className="max-w-2xl text-white text-center">
             <h1 className="text-5xl font-bold mb-6">花と緑と雑貨の店</h1>
             <p className="word-break text-xl mb-8">
-              自然の美しさとファッションの魅力が<br></br>出会う特別な場所。
-              あなたの暮らしに彩りを添えるアイテムとワークスペースをご用意しています。
+              花や緑、布とともに、
+              <br></br>自分らしい暮らしを見つける場所。
+              <br></br>日々をちょっと素敵にするアイテムと、
+              <br></br>ものづくりを楽しむ時間をご提案します。
             </p>
             {/* <Button asChild size="lg">
               <Link href="/products">商品を見る</Link>
